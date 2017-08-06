@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Silver Bullet</title>
+<link rel="stylesheet" type="text/css" href="styles/style.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="scripts/script.js"></script>
+</head>
+
+<body>
+
+<div id="menu">
+	
+	<div class="item">
+		<input id="screenWidth" type="number" value="1366" min="320" step="1" onkeypress="return restrictCharacters(this, event, digitsOnly);">
+		<span>Ширина экрана</span><br/>
+	</div>
+	
+	<div class="item">
+		<input id="gap" type="number" value="12" min="0" step="1" onkeypress="return restrictCharacters(this, event, digitsOnly);">
+		<span>Расстояние между колонками</span><br/>
+	</div>
+	
+	<div class="item">
+		<input id="maxErrors" type="number" value="5" min="0" step="1" onkeypress="return restrictCharacters(this, event, digitsOnly);">
+		<span>Макс. количество дробных колонок</span><br/>
+	</div>
+
+	<div class="item">
+		<input id="cols" type="number" value="16" min="1" step="1" onkeypress="return restrictCharacters(this, event, digitsOnly);">   
+		<span>Макс. количество колонок</span><br/>
+	</div>
+	
+	<div class="item">
+		<input id="minMargin" type="number" value="16" min="0" step="1" onkeypress="return restrictCharacters(this, event, digitsOnly);">
+		<span>Мин. размер полей</span><br/>
+	</div>
+	
+	<div class="item">
+		<input id="maxMargin" type="number" value="200" min="999" step="1" onkeypress="return restrictCharacters(this, event, digitsOnly);">
+		<span>Макс. размер полей</span><br/>
+	</div>
+
+	<div class="button">Обновить</div>
+
+</div>
+
+<div id="result"></div>
+
+</body>
+</html>
